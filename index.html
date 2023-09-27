@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto - SanTsu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="content flex">
+      <div class="logo">
+        <img src="./img/Group 65 1.png" alt="Logo com o nome da página e dois personagens.">
+      </div>
+      <nav class="menu">
+        <ul class="flex">
+          <li><a href="#cartoes_01">Cartões</a></li>
+          <li><a href="#contato_01">Contato</a></li>
+        </ul>
+      </nav>
+      <!-- NAV BAR -->
+      <div class="navbar">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a onclick="closeNav()" href="#cartoes_01">Cartões</a>
+          <a onclick="closeNav()" href="#contato_01">Contato</a>
+        </div>
+      </div>
+      <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </div>
+
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="content flex">
+      <div class="textos">
+          <h1>Lorem ipsum dolor <br> sit amet</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita illo, eum esse blanditiis ipsam dolore quidem sit cumque modi incidunt </p>
+          <div class="botao">
+            <button>Botão</button>
+          </div>
+        </div>
+        <img src="./img/image 1.png" alt="Imagem de dois presentes grendes com 3 pequenos personagens em volta e em cima deles.">
+      </div>
+  </section>
+
+  <main id="cartoes_01">-
+    <div class="content">
+      <section>
+        <div class="tit">
+          <h2>Cartões</h2>
+        </div>
+        <div class="cartoes flex">
+          <article class="cartao">
+            <div class="cor" id="cor1"></div>
+            <div class="txt">
+              <h3>Título do Card</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, perspiciatis doloremque </p>
+            </div>
+          </article> <article class="cartao">
+            <div class="cor" id="cor2"></div>
+            <div class="txt">
+              <h3>Título do Card</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, perspiciatis doloremque </p>
+            </div>
+          </article> <article class="cartao">
+            <div class="cor" id="cor3"></div>
+            <div class="txt">
+              <h3>Título do Card</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, perspiciatis doloremque </p>
+            </div>
+          </article>
+        </div> 
+        <div class="cartoes flex">
+          <article class="cartao">
+            <div class="cor" id="cor4"></div>
+            <div class="txt">
+              <h3>Título do Card</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, perspiciatis doloremque </p>
+            </div>
+          </article> <article class="cartao">
+            <div class="cor" id="cor5"></div>
+            <div class="txt">
+              <h3>Título do Card</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, perspiciatis doloremque </p>
+            </div>
+          </article> <article class="cartao">
+            <div class="cor" id="cor6"></div>
+            <div class="txt">
+              <h3>Título do Card</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, perspiciatis doloremque </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <form id="contato_01" class="flex">
+    <h2>Entre em contato</h2>
+
+    <input type="text" class="input" id="input_nome" placeholder="  Nome" maxlength="120" size="45">
+
+    <input type="email" class="input" id="input_email" placeholder="  E-mail" maxlength="120" size="45">
+
+    <input type="tel" class="input" id="input_tel" placeholder="  Telefone" maxlength="120" size="45">
+
+    <textarea class="input" id="input_mensagem" placeholder=" Mensagem..." cols="45" rows="7"></textarea>
+
+    <input id="botao_contato" type="button" value="Enviar mensagem">
+  </form>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

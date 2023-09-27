@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@400;700&family=Raleway:wght@400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topo{
+  background-color: #F9F9F9;
+  width: 100%;
+  height: 64px;
+}
+
+.content{
+  max-width: 1440px;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.logo img{
+  height: 35px;
+}
+
+.menu li{
+  margin-left: 97px;
+  list-style-type: none;
+}
+
+.menu li a{
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  transition: 0.3s;
+  scroll-behavior: smooth; 
+}
+
+.menu li a:hover{
+  background-color: #6b63ff;
+  color: white;
+  border-radius: 10px;
+}
+
+.navbar{
+  display: none;
+}
+
+.banner{
+  width: 100%;
+  height: calc(100vh - 64px);
+  background-color: #d7d4ff;
+}
+
+.textos{
+  width: 25%;
+}
+
+.textos h1{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 47px;
+  margin-bottom: 10px;
+}
+
+.textos p{
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 25px;
+}
+
+.botao button{
+  background-color: #6C63FF;
+  border: none;
+  border-radius: 5px;
+  padding: 17.5px 60px;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+}
+
+.botao button:hover{
+  color: #6C63FF;
+  background-color: white;
+}
+
+.banner img{
+  width: 38%;
+}
+
+main{
+  background-color: #E5E5E5;
+  padding-bottom: 90px;
+}
+
+.tit{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.cartoes{
+  margin-bottom: 80px;
+}
+
+.cartao{
+  background-color: #FFFFFF;
+  width: 25%;
+  height: 380px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cartao:hover{
+  width: 30%;
+  height: 410px;
+  border: solid 2px #D7D4FF;
+}
+
+.cor{
+  height: 210px;
+}
+
+#cor1{
+  background-color: #FF6363;
+}
+
+#cor2{
+  background-color: #63ECFF;
+}
+
+#cor3{
+  background-color: #F363FF;
+}
+
+#cor4{
+  background-color: #63FF73;
+}
+
+#cor5{
+  background-color: #FFDD63;
+}
+
+#cor6{
+  background-color: #6663FF;
+}
+
+.txt{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt h3{
+  margin: 10px 0 20px 0;
+}
+
+form{
+  flex-direction: column;
+  background-color: #D7D4FF;
+}
+
+form h2{
+  margin: 50px 0 25px 0;
+}
+
+.input{
+  margin-bottom: 10px;
+  size: 100px;
+  padding: 15px 0;
+}
+
+#botao_contato{
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 60px;
+  padding: 10px 112px;
+  background-color: #6a62ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+}
+
+#botao_contato:hover{
+  color: #6C63FF;
+  background-color: white;
+}
+
+@media (max-width:1439px){
+  .banner{
+    height: calc(80vh - 64px);
+  }
+  .banner img{
+      width: 50%;
+      max-width: 530px;
+  }
+
+  .textos{
+    width: 40%;
+  }
+}
+
+@media (max-width:1023px){
+  .menu li a{
+    font-size: 16.5px;
+  }
+
+  .topo img{
+    height: 30px;
+  }
+
+  .textos{
+    width: 40%;
+  }
+
+  .textos h1{
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .textos p{
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 18px;
+  }
+
+  .cartao{
+    width: 28%;
+    height: 350px;
+  }
+
+  .cor{
+    height: 170px;
+  }
+
+  #input_mensagem{
+    padding: 4px;
+  }
+}
+
+@media (max-width:767px){
+  .topo .flex{
+    flex-direction: row;
+  }
+
+  .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textos{
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .banner img{
+    width: 85%;
+    max-width: 370px;
+    padding-bottom: 20px;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .navbar{
+    display: block;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #d7d4ffcc;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: #6b63ff;
+    border-radius: 30px;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 90px;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  .cartoes{
+    margin-bottom: 0;
+  }
+  
+  .cartao{
+    width: 85%;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width:424px){
+  .input{
+    width: 90%;
+  }
+
+  #botao_contato{
+    padding: 10px 80px;
+  }
+}
